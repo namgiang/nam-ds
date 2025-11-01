@@ -1,0 +1,38 @@
+{
+  "name": "@nam-ds/icons",
+  "version": "0.1.0",
+  "description": "Source-agnostic icon system with accessibility defaults for NAM Design System",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@nam-ds/tokens": "workspace:^",
+    "lucide-react": "^0.445.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^9.1.15",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  },
+  "keywords": ["icons", "lucide", "accessibility", "design-system", "react"]
+}

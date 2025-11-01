@@ -1,0 +1,144 @@
+@import "@nam-ds/tokens/dist/style.css";
+
+.loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sizes */
+.loading--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.loading--md {
+  width: 20px;
+  height: 20px;
+}
+
+.loading--lg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Spinner variant */
+.loading--spinner .spinnerIcon {
+  width: 100%;
+  height: 100%;
+  animation: spin 1s linear infinite;
+  
+  circle {
+    animation: dash 1.5s ease-in-out infinite;
+  }
+}
+
+/* Dots variant */
+.loading--dots {
+  gap: var(--spacing-1);
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: var(--border-radius-full);
+  background-color: currentColor;
+  animation: dotPulse 1.4s ease-in-out infinite both;
+  
+  &:nth-child(2) {
+    animation-delay: 0.16s;
+  }
+  
+  &:nth-child(3) {
+    animation-delay: 0.32s;
+  }
+}
+
+.loading--dots.loading--sm .dot {
+  width: 3px;
+  height: 3px;
+}
+
+.loading--dots.loading--lg .dot {
+  width: 5px;
+  height: 5px;
+}
+
+/* Pulse variant */
+.loading--pulse {
+  gap: var(--spacing-1);
+}
+
+.pulseBar {
+  width: 2px;
+  height: 100%;
+  background-color: currentColor;
+  animation: barPulse 1s ease-in-out infinite;
+  
+  &:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  &:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  &:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+}
+
+.loading--pulse.loading--sm .pulseBar {
+  width: 1.5px;
+}
+
+.loading--pulse.loading--lg .pulseBar {
+  width: 2.5px;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes dotPulse {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes barPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scaleY(0.4);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

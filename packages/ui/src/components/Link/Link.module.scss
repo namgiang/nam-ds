@@ -1,0 +1,122 @@
+@import "@nam-ds/tokens/dist/style.css";
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  text-decoration: none;
+  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-brand-primary-500);
+    outline-offset: 2px;
+    border-radius: var(--border-radius-sm);
+  }
+}
+
+/* Variants */
+.link--default {
+  color: var(--color-brand-primary-500);
+  
+  &:hover:not(.link--disabled) {
+    color: var(--color-brand-primary-600);
+  }
+  
+  &:active:not(.link--disabled) {
+    color: var(--color-brand-primary-700);
+  }
+}
+
+.link--primary {
+  color: var(--color-brand-primary-500);
+  font-weight: var(--font-weight-medium);
+  
+  &:hover:not(.link--disabled) {
+    color: var(--color-brand-primary-600);
+  }
+  
+  &:active:not(.link--disabled) {
+    color: var(--color-brand-primary-700);
+  }
+}
+
+.link--secondary {
+  color: var(--color-brand-secondary-500);
+  
+  &:hover:not(.link--disabled) {
+    color: var(--color-brand-secondary-600);
+  }
+  
+  &:active:not(.link--disabled) {
+    color: var(--color-brand-secondary-700);
+  }
+}
+
+.link--muted {
+  color: var(--color-neutral-600);
+  
+  &:hover:not(.link--disabled) {
+    color: var(--color-neutral-800);
+  }
+  
+  &:active:not(.link--disabled) {
+    color: var(--color-neutral-900);
+  }
+}
+
+/* Sizes */
+.link--sm {
+  font-size: var(--font-size-sm);
+}
+
+.link--md {
+  font-size: var(--font-size-base);
+}
+
+.link--lg {
+  font-size: var(--font-size-lg);
+}
+
+/* Underline variants */
+.link--underline-none {
+  text-decoration: none;
+}
+
+.link--underline-hover {
+  text-decoration: none;
+  
+  &:hover:not(.link--disabled) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+}
+
+.link--underline-always {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* States */
+.link--disabled {
+  color: var(--color-neutral-400);
+  cursor: not-allowed;
+  pointer-events: none;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* External link icon */
+.externalIcon {
+  margin-left: var(--spacing-1);
+}

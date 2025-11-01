@@ -1,0 +1,16 @@
+
+
+> @nam-ds/tokens@0.1.0 build /Volumes/Dev1/nam-ds/packages/tokens
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+[2K[1Gtransforming (1) [2msrc/index.ts[22m[2K[1Gtransforming (2) [2msrc/themes/dutch-phrase-companion.scss[22m[2K[1G[32m✓[39m 4 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[32m
+[36m[vite:dts][32m Start generate declaration files...[39m
+[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mstyle.css    [39m[1m[2m8.11 kB[22m[1m[22m[2m │ gzip: 2.04 kB[22m
+[2mdist/[22m[36mindex.es.js  [39m[1m[2m5.63 kB[22m[1m[22m[2m │ gzip: 1.42 kB[22m
+[32m[36m[vite:dts][32m Declaration files built in 443ms.
+[39m
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mstyle.css     [39m[1m[2m8.11 kB[22m[1m[22m[2m │ gzip: 2.04 kB[22m
+[2mdist/[22m[36mindex.cjs.js  [39m[1m[2m4.41 kB[22m[1m[22m[2m │ gzip: 1.32 kB[22m
+[32m✓ built in 784ms[39m

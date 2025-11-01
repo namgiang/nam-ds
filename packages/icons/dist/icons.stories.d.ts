@@ -1,0 +1,38 @@
+import { StoryObj } from '@storybook/react';
+
+declare const meta: Meta;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const ArrowLeft: Story;
+export declare const ArrowRight: Story;
+export declare const ArrowUp: Story;
+export declare const ArrowDown: Story;
+export declare const ChevronLeft: Story;
+export declare const ChevronRight: Story;
+export declare const Home: Story;
+export declare const Menu: Story;
+export declare const Close: Story;
+export declare const Plus: Story;
+export declare const Edit: Story;
+export declare const Delete: Story;
+export declare const Save: Story;
+export declare const Search: Story;
+export declare const Download: Story;
+export declare const Upload: Story;
+export declare const Check: Story;
+export declare const CheckCircle: Story;
+export declare const Warning: Story;
+export declare const Error: Story;
+export declare const Info: Story;
+export declare const Alert: Story;
+export declare const Settings: Story;
+export declare const User: Story;
+export declare const Mail: Story;
+export declare const ExternalLink: Story;
+export declare const Heart: Story;
+export declare const Star: Story;
+export declare const Eye: Story;
+export declare const EyeOff: Story;
+export declare const Calendar: Story;
+export declare const Clock: Story;
+//# sourceMappingURL=icons.stories.d.ts.map

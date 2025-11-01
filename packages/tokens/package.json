@@ -1,0 +1,21 @@
+{
+  "name": "@nam-ds/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens and CSS variables for NAM Design System",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["design-tokens", "css-variables", "theming"]
+}
