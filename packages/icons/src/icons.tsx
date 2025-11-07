@@ -66,3 +66,6 @@ export const IconMail = createIcon(LucideIcons.Mail, "IconMail");
 export const IconPhone = createIcon(LucideIcons.Phone, "IconPhone");
 export const IconCalendar = createIcon(LucideIcons.Calendar, "IconCalendar");
 export const IconClock = createIcon(LucideIcons.Clock, "IconClock");
+export const IconBook = createIcon(LucideIcons.Book, "IconBook");
+export const IconLanguage = createIcon(LucideIcons.Languages, "IconLanguage");
+export const IconSparkles = createIcon(LucideIcons.Sparkles, "IconSparkles");

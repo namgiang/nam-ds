@@ -226,4 +226,22 @@ export declare const IconClock: {
     }): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
+export declare const IconBook: {
+    (props: import('./base').BaseIconProps & {
+        ref?: React.Ref<HTMLSpanElement>;
+    }): import("react/jsx-runtime").JSX.Element;
+    displayName: string;
+};
+export declare const IconLanguage: {
+    (props: import('./base').BaseIconProps & {
+        ref?: React.Ref<HTMLSpanElement>;
+    }): import("react/jsx-runtime").JSX.Element;
+    displayName: string;
+};
+export declare const IconSparkles: {
+    (props: import('./base').BaseIconProps & {
+        ref?: React.Ref<HTMLSpanElement>;
+    }): import("react/jsx-runtime").JSX.Element;
+    displayName: string;
+};
 //# sourceMappingURL=icons.d.ts.map

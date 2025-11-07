@@ -1,20 +1,20 @@
-const t = {
+const i = {
   default: "default",
   dark: "dark",
   "dutch-phrase-companion": "dutch-phrase-companion"
-}, n = {
+}, r = {
   color: {
     brand: {
-      primary: (r = 500) => a(`--color-brand-primary-${r}`),
-      secondary: (r = 500) => a(`--color-brand-secondary-${r}`)
+      primary: (e = 500) => a(`--color-brand-primary-${e}`),
+      secondary: (e = 500) => a(`--color-brand-secondary-${e}`)
     },
     semantic: {
-      success: (r = 500) => a(`--color-success-${r}`),
-      warning: (r = 500) => a(`--color-warning-${r}`),
-      error: (r = 500) => a(`--color-error-${r}`),
-      info: (r = 500) => a(`--color-info-${r}`)
+      success: (e = 500) => a(`--color-success-${e}`),
+      warning: (e = 500) => a(`--color-warning-${e}`),
+      error: (e = 500) => a(`--color-error-${e}`),
+      info: (e = 500) => a(`--color-info-${e}`)
     },
-    neutral: (r = 500) => a(`--color-neutral-${r}`)
+    neutral: (e = 500) => a(`--color-neutral-${e}`)
   },
   spacing: {
     px: () => a("--spacing-px"),
@@ -31,20 +31,35 @@ const t = {
     20: () => a("--spacing-20"),
     24: () => a("--spacing-24"),
     32: () => a("--spacing-32")
+  },
+  fontSize: {
+    xs: () => a("--font-size-caption-xs"),
+    sm: () => a("--font-size-caption-sm"),
+    base: () => a("--font-size-body-md"),
+    lg: () => a("--font-size-body-lg"),
+    xl: () => a("--font-size-body-xl"),
+    "2xl": () => a("--font-size-heading-lg"),
+    "3xl": () => a("--font-size-heading-xl"),
+    "4xl": () => a("--font-size-heading-2xl"),
+    "5xl": () => a("--font-size-heading-3xl"),
+    "6xl": () => a("--font-size-display-xl"),
+    "7xl": () => a("--font-size-display-2xl"),
+    "8xl": () => a("--font-size-display-3xl"),
+    "9xl": () => a("--font-size-display-4xl")
   }
-}, i = {
+}, t = {
   color: {
     brand: {
-      primary: (r = 500) => `var(--color-brand-primary-${r})`,
-      secondary: (r = 500) => `var(--color-brand-secondary-${r})`
+      primary: (e = 500) => `var(--color-brand-primary-${e})`,
+      secondary: (e = 500) => `var(--color-brand-secondary-${e})`
     },
     semantic: {
-      success: (r = 500) => `var(--color-success-${r})`,
-      warning: (r = 500) => `var(--color-warning-${r})`,
-      error: (r = 500) => `var(--color-error-${r})`,
-      info: (r = 500) => `var(--color-info-${r})`
+      success: (e = 500) => `var(--color-success-${e})`,
+      warning: (e = 500) => `var(--color-warning-${e})`,
+      error: (e = 500) => `var(--color-error-${e})`,
+      info: (e = 500) => `var(--color-info-${e})`
     },
-    neutral: (r = 500) => `var(--color-neutral-${r})`
+    neutral: (e = 500) => `var(--color-neutral-${e})`
   },
   spacing: {
     px: () => "var(--spacing-px)",
@@ -63,14 +78,34 @@ const t = {
     32: () => "var(--spacing-32)"
   },
   fontSize: {
-    xs: () => "var(--font-size-xs)",
-    sm: () => "var(--font-size-sm)",
-    base: () => "var(--font-size-base)",
-    lg: () => "var(--font-size-lg)",
-    xl: () => "var(--font-size-xl)",
-    "2xl": () => "var(--font-size-2xl)",
-    "3xl": () => "var(--font-size-3xl)",
-    "4xl": () => "var(--font-size-4xl)"
+    // Fluid typography sizes that scale with viewport
+    xs: () => "var(--font-size-caption-xs)",
+    // 10px -> 14px
+    sm: () => "var(--font-size-caption-sm)",
+    // 11px -> 15px
+    base: () => "var(--font-size-body-md)",
+    // 14px -> 18px
+    lg: () => "var(--font-size-body-lg)",
+    // 16px -> 20px
+    xl: () => "var(--font-size-body-xl)",
+    // 18px -> 22px
+    "2xl": () => "var(--font-size-heading-lg)",
+    // 18px -> 22px
+    "3xl": () => "var(--font-size-heading-xl)",
+    // 20px -> 28px
+    "4xl": () => "var(--font-size-heading-2xl)",
+    // 24px -> 36px
+    // Display sizes for large headings/heroes
+    "5xl": () => "var(--font-size-heading-3xl)",
+    // 30px -> 48px
+    "6xl": () => "var(--font-size-display-xl)",
+    // 20px -> 36px
+    "7xl": () => "var(--font-size-display-2xl)",
+    // 24px -> 48px
+    "8xl": () => "var(--font-size-display-3xl)",
+    // 30px -> 60px
+    "9xl": () => "var(--font-size-display-4xl)"
+    // 36px -> 72px
   },
   fontWeight: {
     light: () => "var(--font-weight-light)",
@@ -83,6 +118,18 @@ const t = {
     sans: () => "var(--font-family-sans)",
     serif: () => "var(--font-family-serif)",
     mono: () => "var(--font-family-mono)"
+  },
+  lineHeight: {
+    display: () => "var(--line-height-display)",
+    heading: () => "var(--line-height-heading)",
+    body: () => "var(--line-height-body)",
+    caption: () => "var(--line-height-caption)",
+    code: () => "var(--line-height-code)"
+  },
+  letterSpacing: {
+    tight: () => "var(--letter-spacing-tight)",
+    normal: () => "var(--letter-spacing-normal)",
+    wide: () => "var(--letter-spacing-wide)"
   },
   borderRadius: {
     none: () => "var(--border-radius-none)",
@@ -108,22 +155,22 @@ const t = {
     modal: () => "var(--z-modal)",
     tooltip: () => "var(--z-tooltip)"
   }
-}, d = {
+}, l = {
   // Get raw values for complex animations
   color: {
     brand: {
-      primary: n.color.brand.primary,
-      secondary: n.color.brand.secondary
+      primary: r.color.brand.primary,
+      secondary: r.color.brand.secondary
     },
     semantic: {
-      success: n.color.semantic.success,
-      warning: n.color.semantic.warning,
-      error: n.color.semantic.error,
-      info: n.color.semantic.info
+      success: r.color.semantic.success,
+      warning: r.color.semantic.warning,
+      error: r.color.semantic.error,
+      info: r.color.semantic.info
     },
-    neutral: n.color.neutral
+    neutral: r.color.neutral
   },
-  spacing: n.spacing,
+  spacing: r.spacing,
   // Common animation presets
   presets: {
     fadeIn: {
@@ -148,45 +195,45 @@ const t = {
     }
   }
 };
-function c(r) {
-  typeof document < "u" && (Object.values(t).forEach((e) => {
-    e !== "default" && document.documentElement.removeAttribute("data-theme");
-  }), r !== "default" && document.documentElement.setAttribute("data-theme", r));
+function s(e) {
+  typeof document < "u" && (Object.values(i).forEach((n) => {
+    n !== "default" && document.documentElement.removeAttribute("data-theme");
+  }), e !== "default" && document.documentElement.setAttribute("data-theme", e));
 }
-function s() {
+function c() {
   return typeof document < "u" && document.documentElement.getAttribute("data-theme") || "default";
 }
-function l() {
-  const e = s() === "dark" ? "default" : "dark";
-  return c(e), e;
+function d() {
+  const n = c() === "dark" ? "default" : "dark";
+  return s(n), n;
 }
-function m(r, e = 500) {
+function p(e, n = 500) {
   if (typeof document < "u") {
-    const o = `--color-${r.replace(/\./g, "-")}-${e}`;
+    const o = `--color-${e.replace(/\./g, "-")}-${n}`;
     return getComputedStyle(document.documentElement).getPropertyValue(o).trim();
   }
-  return `${r.replace(/\./g, "-")}${e}`, "#000000";
+  return `${e.replace(/\./g, "-")}${n}`, "#000000";
 }
-function a(r) {
-  return typeof document < "u" ? getComputedStyle(document.documentElement).getPropertyValue(r.startsWith("--") ? r : `--${r}`).trim() : "";
+function a(e) {
+  return typeof document < "u" ? getComputedStyle(document.documentElement).getPropertyValue(e.startsWith("--") ? e : `--${e}`).trim() : "";
 }
-function u(r, e) {
+function g(e, n) {
   typeof document < "u" && document.documentElement.style.setProperty(
-    r.startsWith("--") ? r : `--${r}`,
-    e
+    e.startsWith("--") ? e : `--${e}`,
+    n
   );
 }
-const p = i;
+const m = t;
 export {
-  p as cssVar,
+  m as cssVar,
   a as getCSSVar,
-  s as getTheme,
-  m as getThemeColor,
-  d as motion,
-  n as rawTokens,
-  u as setCSSVar,
-  c as setTheme,
-  t as themes,
-  l as toggleTheme,
-  i as token
+  c as getTheme,
+  p as getThemeColor,
+  l as motion,
+  r as rawTokens,
+  g as setCSSVar,
+  s as setTheme,
+  i as themes,
+  d as toggleTheme,
+  t as token
 };

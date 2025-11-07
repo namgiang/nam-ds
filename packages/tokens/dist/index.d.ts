@@ -36,6 +36,21 @@ export declare const rawTokens: {
         readonly 24: () => string;
         readonly 32: () => string;
     };
+    readonly fontSize: {
+        readonly xs: () => string;
+        readonly sm: () => string;
+        readonly base: () => string;
+        readonly lg: () => string;
+        readonly xl: () => string;
+        readonly "2xl": () => string;
+        readonly "3xl": () => string;
+        readonly "4xl": () => string;
+        readonly "5xl": () => string;
+        readonly "6xl": () => string;
+        readonly "7xl": () => string;
+        readonly "8xl": () => string;
+        readonly "9xl": () => string;
+    };
 };
 export declare const token: {
     readonly color: {
@@ -76,6 +91,11 @@ export declare const token: {
         readonly "2xl": () => string;
         readonly "3xl": () => string;
         readonly "4xl": () => string;
+        readonly "5xl": () => string;
+        readonly "6xl": () => string;
+        readonly "7xl": () => string;
+        readonly "8xl": () => string;
+        readonly "9xl": () => string;
     };
     readonly fontWeight: {
         readonly light: () => string;
@@ -88,6 +108,18 @@ export declare const token: {
         readonly sans: () => string;
         readonly serif: () => string;
         readonly mono: () => string;
+    };
+    readonly lineHeight: {
+        readonly display: () => string;
+        readonly heading: () => string;
+        readonly body: () => string;
+        readonly caption: () => string;
+        readonly code: () => string;
+    };
+    readonly letterSpacing: {
+        readonly tight: () => string;
+        readonly normal: () => string;
+        readonly wide: () => string;
     };
     readonly borderRadius: {
         readonly none: () => string;
@@ -245,6 +277,11 @@ export declare const cssVar: {
         readonly "2xl": () => string;
         readonly "3xl": () => string;
         readonly "4xl": () => string;
+        readonly "5xl": () => string;
+        readonly "6xl": () => string;
+        readonly "7xl": () => string;
+        readonly "8xl": () => string;
+        readonly "9xl": () => string;
     };
     readonly fontWeight: {
         readonly light: () => string;
@@ -257,6 +294,18 @@ export declare const cssVar: {
         readonly sans: () => string;
         readonly serif: () => string;
         readonly mono: () => string;
+    };
+    readonly lineHeight: {
+        readonly display: () => string;
+        readonly heading: () => string;
+        readonly body: () => string;
+        readonly caption: () => string;
+        readonly code: () => string;
+    };
+    readonly letterSpacing: {
+        readonly tight: () => string;
+        readonly normal: () => string;
+        readonly wide: () => string;
     };
     readonly borderRadius: {
         readonly none: () => string;

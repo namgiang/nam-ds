@@ -9,6 +9,9 @@ import "./themes/default.scss";
 import "./themes/dark.scss";
 import "./themes/dutch-phrase-companion.scss";
 
+// Import fluid typography system
+import "./typography/fluid.scss";
+
 // Theme utilities
 export const themes = {
   default: "default",
@@ -65,6 +68,21 @@ export const rawTokens = {
     24: () => getCSSVar("--spacing-24"),
     32: () => getCSSVar("--spacing-32"),
   },
+  fontSize: {
+    xs: () => getCSSVar("--font-size-caption-xs"),
+    sm: () => getCSSVar("--font-size-caption-sm"),
+    base: () => getCSSVar("--font-size-body-md"),
+    lg: () => getCSSVar("--font-size-body-lg"),
+    xl: () => getCSSVar("--font-size-body-xl"),
+    "2xl": () => getCSSVar("--font-size-heading-lg"),
+    "3xl": () => getCSSVar("--font-size-heading-xl"),
+    "4xl": () => getCSSVar("--font-size-heading-2xl"),
+    "5xl": () => getCSSVar("--font-size-heading-3xl"),
+    "6xl": () => getCSSVar("--font-size-display-xl"),
+    "7xl": () => getCSSVar("--font-size-display-2xl"),
+    "8xl": () => getCSSVar("--font-size-display-3xl"),
+    "9xl": () => getCSSVar("--font-size-display-4xl"),
+  },
 } as const;
 
 // CSS variable helpers for standard styling
@@ -101,14 +119,21 @@ export const token = {
     32: () => `var(--spacing-32)`,
   },
   fontSize: {
-    xs: () => `var(--font-size-xs)`,
-    sm: () => `var(--font-size-sm)`,
-    base: () => `var(--font-size-base)`,
-    lg: () => `var(--font-size-lg)`,
-    xl: () => `var(--font-size-xl)`,
-    "2xl": () => `var(--font-size-2xl)`,
-    "3xl": () => `var(--font-size-3xl)`,
-    "4xl": () => `var(--font-size-4xl)`,
+    // Fluid typography sizes that scale with viewport
+    xs: () => `var(--font-size-caption-xs)`, // 10px -> 14px
+    sm: () => `var(--font-size-caption-sm)`, // 11px -> 15px
+    base: () => `var(--font-size-body-md)`, // 14px -> 18px
+    lg: () => `var(--font-size-body-lg)`, // 16px -> 20px
+    xl: () => `var(--font-size-body-xl)`, // 18px -> 22px
+    "2xl": () => `var(--font-size-heading-lg)`, // 18px -> 22px
+    "3xl": () => `var(--font-size-heading-xl)`, // 20px -> 28px
+    "4xl": () => `var(--font-size-heading-2xl)`, // 24px -> 36px
+    // Display sizes for large headings/heroes
+    "5xl": () => `var(--font-size-heading-3xl)`, // 30px -> 48px
+    "6xl": () => `var(--font-size-display-xl)`, // 20px -> 36px
+    "7xl": () => `var(--font-size-display-2xl)`, // 24px -> 48px
+    "8xl": () => `var(--font-size-display-3xl)`, // 30px -> 60px
+    "9xl": () => `var(--font-size-display-4xl)`, // 36px -> 72px
   },
   fontWeight: {
     light: () => `var(--font-weight-light)`,
@@ -121,6 +146,18 @@ export const token = {
     sans: () => `var(--font-family-sans)`,
     serif: () => `var(--font-family-serif)`,
     mono: () => `var(--font-family-mono)`,
+  },
+  lineHeight: {
+    display: () => `var(--line-height-display)`,
+    heading: () => `var(--line-height-heading)`,
+    body: () => `var(--line-height-body)`,
+    caption: () => `var(--line-height-caption)`,
+    code: () => `var(--line-height-code)`,
+  },
+  letterSpacing: {
+    tight: () => `var(--letter-spacing-tight)`,
+    normal: () => `var(--letter-spacing-normal)`,
+    wide: () => `var(--letter-spacing-wide)`,
   },
   borderRadius: {
     none: () => `var(--border-radius-none)`,

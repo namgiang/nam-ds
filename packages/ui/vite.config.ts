@@ -1,7 +1,15 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
+  plugins: [
+    dts({
+      outDir: "dist",
+      include: ["src/**/*"],
+      exclude: ["src/**/*.test.*", "src/**/*.stories.*"],
+    }),
+  ],
   test: {
     environment: "happy-dom",
     setupFiles: ["./src/test-setup.ts"],

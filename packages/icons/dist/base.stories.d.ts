@@ -1,12 +1,60 @@
 import { StoryObj } from '@storybook/react';
 
-declare const meta: Meta<{
-    ({ size, className, label, color, children, style, ref, ...props }: import('./base').BaseIconProps & {
-        children: React.ReactNode;
-        ref?: React.Ref<HTMLSpanElement>;
-    }): import("react/jsx-runtime").JSX.Element;
-    displayName: string;
-}>;
+declare const meta: {
+    title: string;
+    component: {
+        ({ size, className, label, color, children, style, ref, ...props }: import('./base').BaseIconProps & {
+            children: React.ReactNode;
+            ref?: React.Ref<HTMLSpanElement>;
+        }): import("react/jsx-runtime").JSX.Element;
+        displayName: string;
+    };
+    parameters: {
+        layout: string;
+        docs: {
+            description: {
+                component: string;
+            };
+        };
+    };
+    tags: string[];
+    argTypes: {
+        size: {
+            control: {
+                type: "select";
+            };
+            options: string[];
+            description: string;
+            table: {
+                defaultValue: {
+                    summary: string;
+                };
+            };
+        };
+        color: {
+            control: {
+                type: "color";
+            };
+            description: string;
+        };
+        label: {
+            control: {
+                type: "text";
+            };
+            description: string;
+        };
+        className: {
+            control: {
+                type: "text";
+            };
+            description: string;
+        };
+        children: {
+            control: false;
+            description: string;
+        };
+    };
+};
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Default: Story;

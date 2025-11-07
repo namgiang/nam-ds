@@ -58,4 +58,7 @@ export {
   Phone,
   Calendar,
   Clock,
+  Book,
+  Languages,
+  Sparkles,
 } from "lucide-react";

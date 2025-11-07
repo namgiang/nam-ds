@@ -1,0 +1,13 @@
+
+> @nam-ds/motion@0.1.0 dev /Volumes/Dev1/nam-ds/packages/motion
+> vite build --watch
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+[36m
+watching for file changes...[39m
+[36m
+build started...[39m
+[2K[1Gtransforming (1) [2msrc/index.ts[22m[2K[1G[32m✓[39m 15 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Grendering chunks (2)...[2K[1G[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1G[2mdist/[22m[36mindex.es.js  [39m[1m[2m21.35 kB[22m[1m[22m[2m │ gzip: 5.57 kB[22m[2m │ map: 53.57 kB[22m
+[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[36mindex.cjs.js  [39m[1m[2m13.75 kB[22m[1m[22m[2m │ gzip: 4.67 kB[22m[2m │ map: 50.18 kB[22m
+[36mbuilt in 403ms.[39m

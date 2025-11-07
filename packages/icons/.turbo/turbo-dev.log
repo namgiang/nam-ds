@@ -1,0 +1,120 @@
+
+> @nam-ds/icons@0.1.0 dev /Volumes/Dev1/nam-ds/packages/icons
+> vite build --watch
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+[36m
+watching for file changes...[39m
+[36m
+build started...[39m
+[96msrc/base.stories.tsx[0m:[93m92[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m92[0m export const Sizes: Story = {
+[7m  [0m [91m             ~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m114[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m114[0m export const Accessibility: Story = {
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m160[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m160[0m export const Colors: Story = {
+[7m   [0m [91m             ~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m201[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m201[0m export const NavigationIcons: Story = {
+[7m   [0m [91m             ~~~~~~~~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m233[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m233[0m export const ActionIcons: Story = {
+[7m   [0m [91m             ~~~~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m264[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m264[0m export const StatusIcons: Story = {
+[7m   [0m [91m             ~~~~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m296[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m296[0m export const InterfaceIcons: Story = {
+[7m   [0m [91m             ~~~~~~~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m325[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m325[0m export const AllIcons: Story = {
+[7m   [0m [91m             ~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+[96msrc/base.stories.tsx[0m:[93m327[0m:[93m32[0m - [91merror[0m[90m TS2550: [0mProperty 'entries' does not exist on type 'ObjectConstructor'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2017' or later.
+
+[7m327[0m     const iconEntries = Object.entries(Icons);
+[7m   [0m [91m                               ~~~~~~~[0m
+[96msrc/base.stories.tsx[0m:[93m337[0m:[93m28[0m - [91merror[0m[90m TS7031: [0mBinding element 'name' implicitly has an 'any' type.
+
+[7m337[0m         {iconEntries.map(([name, IconComponent]) => (
+[7m   [0m [91m                           ~~~~[0m
+[96msrc/base.stories.tsx[0m:[93m337[0m:[93m34[0m - [91merror[0m[90m TS7031: [0mBinding element 'IconComponent' implicitly has an 'any' type.
+
+[7m337[0m         {iconEntries.map(([name, IconComponent]) => (
+[7m   [0m [91m                                 ~~~~~~~~~~~~~[0m
+[96msrc/base.stories.tsx[0m:[93m357[0m:[93m14[0m - [91merror[0m[90m TS2322: [0mType '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' is not assignable to type 'StoryAnnotations<ReactRenderer, { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }, { ...; }>'.
+  Property 'args' is missing in type '{ render: () => JSX.Element; parameters: { docs: { description: { story: string; }; }; }; }' but required in type '{ args: { size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | undefined; className?: string | undefined; label?: string | undefined; color?: string | undefined; style?: CSSProperties | undefined; children: ReactNode; ref?: Ref<...> | undefined; }; }'.
+
+[7m357[0m export const UsageExamples: Story = {
+[7m   [0m [91m             ~~~~~~~~~~~~~[0m
+
+  [96m../../node_modules/.pnpm/storybook@9.1.15_@testing-library+dom@10.4.1_prettier@3.6.2_vite@5.4.21/node_modules/storybook/dist/csf/index.d.ts[0m:[93m935[0m:[93m5[0m
+    [7m935[0m     args: TRequiredArgs;
+    [7m   [0m [96m    ~~~~[0m
+    'args' is declared here.
+
+[2K[1Gtransforming (1) [2msrc/index.ts[22m[2K[1G[32m✓[39m 14 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Grendering chunks (2)...[2K[1G[32m
+[36m[vite:dts][32m Start generate declaration files...[39m
+[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1G[2mdist/[22m[36mindex.es.js  [39m[1m[2m14.28 kB[22m[1m[22m[2m │ gzip: 4.89 kB[22m[2m │ map: 36.33 kB[22m
+[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[36mindex.cjs.js  [39m[1m[2m10.31 kB[22m[1m[22m[2m │ gzip: 4.12 kB[22m[2m │ map: 35.35 kB[22m
+[32m[36m[vite:dts][32m Declaration files built in 2230ms.
+[39m
+[36mbuilt in 2406ms.[39m

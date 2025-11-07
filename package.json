@@ -11,6 +11,7 @@
     "test": "turbo test",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "dutch-app": "pnpm --filter dutch-phrase-companion dev",
     "changeset": "changeset",
     "version-packages": "changeset version && pnpm -r install && pnpm -r build && changeset tag"
   },

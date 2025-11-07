@@ -1,6 +1,49 @@
 import { StoryObj } from '@storybook/react';
 
-declare const meta: Meta;
+declare const meta: {
+    title: string;
+    component: {
+        (props: import('./base').BaseIconProps & {
+            ref?: React.Ref<HTMLSpanElement>;
+        }): import("react/jsx-runtime").JSX.Element;
+        displayName: string;
+    };
+    parameters: {
+        layout: string;
+        docs: {
+            description: {
+                component: string;
+            };
+        };
+    };
+    tags: string[];
+    argTypes: {
+        size: {
+            control: {
+                type: "select";
+            };
+            options: string[];
+            description: string;
+            table: {
+                defaultValue: {
+                    summary: string;
+                };
+            };
+        };
+        color: {
+            control: {
+                type: "color";
+            };
+            description: string;
+        };
+        label: {
+            control: {
+                type: "text";
+            };
+            description: string;
+        };
+    };
+};
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const ArrowLeft: Story;
